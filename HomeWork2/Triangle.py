@@ -21,8 +21,3 @@ class Triangle(Figure, ABC):
 
     def get_perimetr(self):
         return self.side_a + self.side_b + self.side_c
-
-c = Triangle(6, 6, 6)
-print(c.get_area())
-print(c.get_perimetr())
-print

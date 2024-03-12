@@ -16,7 +16,3 @@ class Circle(Figure, ABC):
 
     def get_perimetr(self):
         return round(2 * self.side_r * pi, 3)
-
-c = Circle(6)
-print(c.get_area())
-print(c.get_perimetr())
