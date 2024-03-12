@@ -1,5 +1,5 @@
 from abc import ABC
-from HomeWork2.Figure import Figure
+from HomeWork2.src.Figure import Figure
 from math import pi
 
 
