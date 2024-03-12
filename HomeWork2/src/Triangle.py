@@ -16,6 +16,7 @@ class Triangle(Figure, ABC):
         self.side_c = side_c
         self.p = self.get_perimetr() / 2
 
+    """Heron's formula"""
     def get_area(self):
         return round(sqrt(self.p * (self.p - self.side_a) * (self.p - self.side_b) * (self.p - self.side_c)), 2)
 
