@@ -1,9 +1,8 @@
-from abc import ABC
-from HomeWork2.src.Figure import Figure
+from Figure import Figure
 from math import pi
 
 
-class Circle(Figure, ABC):
+class Circle(Figure):
 
     def __init__(self, side_r: int):
         super().__init__(name="Circle")

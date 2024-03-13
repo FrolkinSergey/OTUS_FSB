@@ -1,8 +1,7 @@
-from abc import ABC
-from HomeWork2.src.Figure import Figure
+from Figure import Figure
 
 
-class Rectangle(Figure, ABC):
+class Rectangle(Figure):
 
     def __init__(self, side_a: int, side_b: int):
         super().__init__(name="Rectangle")

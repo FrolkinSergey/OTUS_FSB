@@ -1,9 +1,8 @@
-from abc import ABC
-from HomeWork2.src.Figure import Figure
+from Figure import Figure
 from math import sqrt
 
 
-class Triangle(Figure, ABC):
+class Triangle(Figure):
 
     def __init__(self, side_a: int, side_b: int, side_c: int):
         super().__init__(name="Triangle")
@@ -16,8 +15,8 @@ class Triangle(Figure, ABC):
         self.side_c = side_c
         self.p = self.get_perimetr() / 2
 
-    """Heron's formula"""
     def get_area(self):
+        """Heron's formula"""
         return round(sqrt(self.p * (self.p - self.side_a) * (self.p - self.side_b) * (self.p - self.side_c)), 2)
 
     def get_perimetr(self):
