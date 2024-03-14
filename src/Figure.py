@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod
 
 class Figure(ABC):
     """Appropriation name"""
-    def __init__(self, name):
+    def __init__(self, name: object) -> object:
         self.name = name
 
     @abstractmethod
