@@ -6,18 +6,18 @@ class Figure(ABC):
     def __init__(self, name):
         self.name = name
 
-    """Area calculation"""
     @abstractmethod
     def get_area(self):
+        """Area calculation"""
         pass
 
-    """Perimetr calculation"""
     @abstractmethod
     def get_perimetr(self):
+        """Perimetr calculation"""
         pass
 
-    """Sum areas of several figures """
     def add_area(self, other_figure):
+        """Sum areas of several figures """
         if not isinstance(other_figure, Figure):
             raise ValueError("Need class <Figure>")
         return self.get_area() + other_figure.get_area()

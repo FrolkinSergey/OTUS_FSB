@@ -1,4 +1,4 @@
-from HomeWork2.src.Rectangle import Rectangle
+from src.Rectangle import Rectangle
 
 
 class Square(Rectangle):
