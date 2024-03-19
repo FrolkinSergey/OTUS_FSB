@@ -1,9 +1,9 @@
 from math import sqrt, pi
 import pytest
-from src.Circle import Circle
-from src.Rectangle import Rectangle
-from src.Square import Square
-from src.Triangle import Triangle
+from NW3.src.Circle import Circle
+from NW3.src.Rectangle import Rectangle
+from NW3.src.Square import Square
+from NW3.src.Triangle import Triangle
 
 
 @pytest.mark.rectangle
