@@ -1,12 +1,12 @@
 import itertools
 import json
-from HW4 import JSON_FILE_PATH, CSV_FILE_PATH, JSON_RESULT_FILE_PATH
+from HW4 import JSON_FILE_PATH, CSV_FILE_PATH, RESULT_JSON_FILE_PATH
 from csv import DictReader
 
 
 with (open(CSV_FILE_PATH, "r") as books,
       open(JSON_FILE_PATH, "r") as f,
-      open(JSON_RESULT_FILE_PATH, "w") as result_json):
+      open(RESULT_JSON_FILE_PATH, "w") as result_json):
     books = DictReader(books)
 
     users = [
