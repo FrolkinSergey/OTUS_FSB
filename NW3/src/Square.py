@@ -1,4 +1,4 @@
-from src.Rectangle import Rectangle
+from NW3.src.Rectangle import Rectangle
 
 
 class Square(Rectangle):

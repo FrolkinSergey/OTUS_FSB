@@ -1,4 +1,4 @@
-from src.Figure import Figure
+from NW3.src.Figure import Figure
 
 
 class Rectangle(Figure):
