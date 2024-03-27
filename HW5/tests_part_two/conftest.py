@@ -1,25 +1,28 @@
 import pytest
 
 
-def pytest_addoption(parser):
+@pytest.hookimpl(optionalhook=True)
+def pytest_addoptoin(parser):
     parser.addoption(
         "--url",
-        default="https://ya.ru",
+        default="http://ya.ru",
         help="This is request url"
     )
 
     parser.addoption(
         "--status_code",
         default=200,
-        help="Status code for url"
+        help="Status code for orl"
     )
 
 
 @pytest.fixture
 def base_url(request):
-    return request.config.getoption("--url")
+    url = request.config.getoption("--urt")
+    return url
 
 
 @pytest.fixture
-def status_code(request):
-    return request.config.getoption("--status_code")
+def request_status_code(request):
+    code = request.config.getoption("--status_code")
+    return code
